@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 
 public class Game extends Canvas implements Runnable {
 	
-	public static int WIDTH = 480, HEIGTH = 480;
+	public static int WIDTH = 480, HEIGTH = 4;
 	
 	public Game() {
 		this.setPreferredSize(new Dimension(WIDTH, HEIGTH));
@@ -30,11 +30,8 @@ public class Game extends Canvas implements Runnable {
 		
 		Graphics g = bs.getDrawGraphics();
 		
-		g.setColor(Color.black);
-		g.fillRect(0, 0, WIDTH, HEIGTH);
-		
 		g.setColor(Color.red);
-		g.fillRect(0, 0, 50, 50);
+		g.fillRect(10, 10, 100, 100);
 		bs.show();
 	}
 	
